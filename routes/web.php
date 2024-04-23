@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EquipoController;
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\ParticipacionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,10 @@ Route::get('/eventos/create', [EventoController::class, 'create'])->name('evento
 Route::delete('/eventos/{evento}', [EventoController::class, 'destroy'])->name('eventos.destroy');
 Route::put('/eventos/{evento}', [EventoController::class, 'update'])->name('eventos.update');
 Route::get('/eventos/{evento}/edit', [EventoController::class , 'edit'])->name('eventos.edit');
+
+Route::get('/participaciones', [ParticipacionController:: class, 'index'])->name('participaciones.index');
+Route::post('/participaciones', [ParticipacionController::class, 'store'])->name('participaciones.store');
+Route::get('/participaciones/create', [ParticipacionController::class, 'create'])->name('participaciones.create');
+Route::delete('/participaciones/{participacion}', [ParticipacionController::class, 'destroy'])->name('participaciones.destroy');
+Route::put('/participaciones/{participacion}', [ParticipacionController::class, 'update'])->name('participaciones.update');
+Route::get('/participaciones/{participacion}/edit', [ParticipacionController::class , 'edit'])->name('participaciones.edit');
