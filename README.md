@@ -1,66 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema de Gestión de Eventos Deportivos (SGED)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+- Instrucciones de Uso
+El Sistema de Gestión de Eventos Deportivos (SGED) es una aplicación web que nos permite administrar y organizar eventos deportivos de manera eficiente. A continuación, se detallan las instrucciones para utilizar la aplicación.
 
-## About Laravel
+-Acceso a la Aplicación
+1. Abra su navegador web y acceda a la siguiente dirección: `http://localhost:8000`.
+2. Si no tiene una cuenta, haga clic en el enlace "Registrarse" y complete el formulario de registro.
+3. Si ya tiene una cuenta, haga clic en el enlace "Iniciar sesión" e ingrese sus credenciales.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Gestión de Eventos
+1. Una vez que haya iniciado sesión, verá el menú principal de la aplicación.
+2. Haga clic en "Eventos" para ver la lista de eventos deportivos existentes.
+3. Para crear un nuevo evento, haga clic en el botón "Crear Evento".
+4. Complete el formulario con los detalles del evento, como nombre, descripción, fecha, ubicación y tipo (torneo, partido amistoso, maratón, etc.).
+5. Haga clic en "Guardar" para crear el nuevo evento.
+6. Para editar o eliminar un evento existente, utilice las acciones correspondientes en la lista de eventos.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-Gestión de Equipos
+1. Desde el menú principal, haga clic en "Equipos" para ver la lista de equipos registrados.
+2. Para agregar un nuevo equipo, haga clic en el botón "Crear Equipo".
+3. Complete el formulario con la información del equipo, como nombre, deporte y entrenador.
+4. Haga clic en "Guardar" para crear el nuevo equipo.
+5. Para editar o eliminar un equipo existente, utilice las acciones correspondientes en la lista de equipos.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+-Gestión de Participaciones
+1. Desde el menú principal, haga clic en "Participaciones" para ver la lista de participaciones de equipos en eventos.
+2. Para registrar una nueva participación, haga clic en el botón "Crear Participación".
+3. Seleccione el evento y el equipo correspondientes.
+4. Ingrese los resultados y premios obtenidos por el equipo en ese evento.
+5. Haga clic en "Guardar" para crear la nueva participación.
+6. Para editar o eliminar una participación existente, utilice las acciones correspondientes en la lista de participaciones.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-Cerrar Sesión
+1. Para cerrar su sesión en la aplicación, haga clic en su nombre de usuario en la parte superior derecha de la pantalla.
+2. Seleccione "Cerrar sesión" en el menú desplegable.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-Características
+- **Eventos**: Administre la información de eventos deportivos, como nombre, descripción, fecha, ubicación y tipo (torneo, partido amistoso, maratón, etc.).
+- **Equipos**: Mantenga un registro de los equipos participantes, incluyendo información como nombre, deporte y entrenador.
+- **Participaciones**: Gestione la participación de los equipos en los eventos, registrando los resultados y premios obtenidos.
+- **Autenticación de usuarios**: Implemente un sistema de autenticación y registro de usuarios utilizando Laravel Breeze.
+- **Control de acceso**: Proteja las rutas de la aplicación con el middleware `auth` de Laravel Breeze.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+-Instalación
+Creamos el proyecto LARAVEL con el siguiente comando
+laravel new eventos-deportivos
+Instalamos npm para el manejo de accesos y manejar eventos de desarrollo y ambiente real con el siguiente comando
+npm install
+Para modo desarrollador
+--npm run dev
+Para Compilar al ambiente real
+--npm run build
+Instalamos composer
+--composer install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/sged.git`
+2. Navega al directorio del proyecto: `cd sged`
+3. Instala las dependencias: `composer install`
+4. Configura el archivo `.env` con tus credenciales de base de datos
+5. Genera una nueva clave de aplicación: `php artisan key:generate`
+6. Ejecuta las migraciones de la base de datos: `php artisan migrate`
+7. Inicia el servidor de desarrollo: `php artisan serve`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+Contribución
+1. Haz un fork del repositorio
+2. Crea una nueva rama para tu funcionalidad: `git checkout -b nueva-funcionalidad`
+3. Realiza tus cambios y haz commit: `git commit -m 'Agrega nueva funcionalidad'`
+4. Envía tus cambios al repositorio remoto: `git push origin nueva-funcionalidad`
+5. Crea un nuevo Pull Request en GitHub
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
