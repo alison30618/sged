@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
+Route::middleware('auth')->group(function () {
 Route::get('/equipos', [EquipoController:: class, 'index'])->name('equipos.index');
 Route::post('/equipos', [EquipoController::class, 'store'])->name('equipos.store');
 Route::get('/equipos/create', [EquipoController::class, 'create'])->name('equipos.create');
@@ -54,3 +54,4 @@ Route::get('/participaciones/create', [ParticipacionController::class, 'create']
 Route::delete('/participaciones/{participacion}', [ParticipacionController::class, 'destroy'])->name('participaciones.destroy');
 Route::put('/participaciones/{participacion}', [ParticipacionController::class, 'update'])->name('participaciones.update');
 Route::get('/participaciones/{participacion}/edit', [ParticipacionController::class , 'edit'])->name('participaciones.edit');
+});
