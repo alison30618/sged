@@ -59,7 +59,7 @@
             
             <div class="mt-3">
                 <button type="submit" class="btn btn-primary">Update</button>
-                <a href="{{route('participaciones.index')}}" class="btn btn-warning">Cancel</a>
+                <a href="{{route('participaciones.index')}}" class="btn btn-warning">Cancelar</a>
             </div>
             
         </form>
